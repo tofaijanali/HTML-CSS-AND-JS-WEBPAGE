@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Signup</title>
+    <link rel="stylesheet" href="membership.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Membership Signup</h1>
+        <form action="file:///C:/Users/Acer/Desktop/Faizan%20Ali/learning/HTML%20and%20CSS/thanks.html" method="POST">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="membership-plan">Membership Plan</label>
+            <select id="membership-plan" name="membership-plan" required>
+                <option value="" disabled selected>Select Membership Plan</option>
+                <option value="monthly">Monthly Membership ($19.99/month)</option>
+                <option value="quarterly">Quarterly Membership ($49.99/3 months)</option>
+                <option value="yearly">Yearly Membership ($149.99/year)</option>
+            </select>
+
+            <label for="payment-duration">Payment Duration (in months)</label>
+            <input type="number" id="payment-duration" name="payment-duration" min="1" required>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+</body>
+</html>
